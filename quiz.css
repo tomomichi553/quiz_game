@@ -1,0 +1,85 @@
+/* リセットスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ボディスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+/* 画像スタイル */
+.mypic {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 質問セクションスタイル */
+#js-question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ボタンスタイル */
+button {
+    background-color: #ff6347; /* トマト色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+button:hover {
+    background-color: #ff4500; /* 濃いトマト色 */
+}
+
+/* テキストサイズ */
+.text-64 {
+    font-size: 64px;
+  }
+  
+  /* ダイアログ */
+  .dialog {
+    width:30%;
+    margin: auto;
+    padding: 20px;
+  }
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+/* メディアクエリ */
+@media (max-width: 600px) {
+    #js-question {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}

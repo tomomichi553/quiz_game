@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Meat</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <img id="mypic" src="quiz_image/" width="50%" alt="Quiz Image">
+    <div id="js-question"></div>
+    <button class="button answer-button"></button>
+    <button class="button answer-button"></button>
+    <button class="button answer-button"></button>
+    <button class="button answer-button"></button>
+
+    <!-- 正解・不正解のダイアログ -->
+    <dialog id="dialog" class="dialog w-sm">
+        <div class="flex-col gap-sm">
+            <div id="questionResult" class="text-64">⭕️✖️</div>
+            <button type="button" id="nextButton" class="button text-md">次の問題へ</button>
+        </div>
+    </dialog>
+
+    <audio id="btn_audio_correct">
+        <source src="quiz_audio/クイズ正解2.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="btn_audio_incorrect">
+        <source src="quiz_audio/クイズ不正解1.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

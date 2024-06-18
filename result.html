@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet Meat</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <h1>結果</h1>
+    <p id="result"></p>
+    <p id="comment"></p>
+    <button onclick="location.href='quiz_start.html'">戻る</button>
+    
+    <script>
+        // ローカルストレージからスコアを取得
+        const score = localStorage.getItem('score');
+        const total = localStorage.getItem('total');
+
+        // 結果を表示
+        document.getElementById('result').textContent = 'あなたの正解数は' + score + '/' + total + 'です！';
+
+        if(score == 5){
+            document.getElementById('comment').textContent = 'お肉マスターの称号は君のものだ！';
+        }else if(score > 2){
+            document.getElementById('comment').textContent = 'お肉マスターまでもう少し！';
+        }else{
+            document.getElementById('comment').textContent = '焼肉でどの部位を食べてるかわかってないでしょ？';
+        }
+    </script>
+</body>
+</html>
